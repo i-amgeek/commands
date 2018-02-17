@@ -36,9 +36,9 @@ for fil in listdir(directory):
     for typ,lis in exts.iteritems():
         for ex in lis:
             if fil.endswith(ex) or fil.endswith(ex.upper()):
-                if not path.exists(directory+typ+'/'):
-                    makedirs(directory+typ+'/')
-                rename(directory+fil, directory+typ+'/'+fil)
+                if not path.exists(typ+'/'):
+                    makedirs(typ+'/')
+                rename(directory+fil, typ+'/'+fil)
                 print fil + " : " + typ
 
 print ""
