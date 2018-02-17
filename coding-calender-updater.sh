@@ -1,0 +1,1 @@
+cd /home/anonymous/ ; wget https://coding-calender.herokuapp.com/update ; rm update
