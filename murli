@@ -1,0 +1,15 @@
+#!/usr/bin/python3.6
+from os import system as sy
+from os import path,chdir
+from time import strftime
+
+date = strftime('%d.%m.%y')
+murlipath = '/home/anonymous/Documents/Murli/'
+link = 'http://www.babamurli.com/01.%20Daily%20Murli/01.%20Hindi/02.%20Hindi%20Murli%20-%20Pdf/'
+
+if not path.exists(f'{murlipath}Murli-{date}.pdf'):
+    chdir(murlipath)
+    sy(f'wget {link}{date}-h.pdf')
+    sy(f'mv {murlipath}{date}* {murlipath}Murli-{date}.pdf')
+
+sy(f'xdg-open {murlipath}Murli-{date}.pdf')
