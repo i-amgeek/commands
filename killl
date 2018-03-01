@@ -1,0 +1,3 @@
+from os import *
+app = input("App to kill:\t")
+system("ps -aux | ag {}| awk '{print $2}' | xargs kill 9".format(app))
