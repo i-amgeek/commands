@@ -1,3 +1,8 @@
-from os import *
-app = input("App to kill:\t")
-system("ps -aux | ag {}| awk '{print $2}' | xargs kill 9".format(app))
+#!/usr/bin/python3
+from os import system
+from sys import argv
+try:
+	app = argv[1]
+except:
+	print("Give name of app to kill as argument")
+system("ps ax | ag "+app+" | awk '{print $1}' | xargs kill 9")
