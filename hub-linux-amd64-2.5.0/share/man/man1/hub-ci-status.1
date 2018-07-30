@@ -1,0 +1,37 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "HUB\-CI\-STATUS" "1" "July 2018" "GITHUB" "Hub Manual"
+.
+.SH "NAME"
+\fBhub\-ci\-status\fR \- Display status of GitHub checks for a commit\.
+.
+.SH "SYNOPSIS"
+\fBhub ci\-status\fR [\-v] [\fICOMMIT\fR]
+.
+.SH "OPTIONS"
+.
+.TP
+\-v
+Print detailed report of all status checks and their URLs\.
+.
+.TP
+\fICOMMIT\fR
+A commit SHA or branch name (default: "HEAD")\.
+.
+.P
+Possible outputs and exit statuses:
+.
+.IP "\(bu" 4
+success, neutral: 0
+.
+.IP "\(bu" 4
+failure, error, action_required, cancelled, timed_out: 1
+.
+.IP "\(bu" 4
+pending: 2
+.
+.IP "" 0
+.
+.SH "SEE ALSO"
+hub\-pull\-request(1), hub(1)

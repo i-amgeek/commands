@@ -1,1 +1,0 @@
-from motivate import quote

@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import os
+from random import choice
+files = os.listdir('/usr/share/cowsay/cows')
+print(choice(files)[:-4])
+

@@ -1,0 +1,10 @@
+sudo apt-get install zsh cowsay tmux
+cp .oh-my-zsh ~/
+cp .zshrc ~/
+sudo chsh -s $(which zsh)
+cp .config ~/
+cp .fonts ~/
+fc-cache -fv ~/.fonts 
+cp .bash_aliases ~/
+cp commands ~/
+
