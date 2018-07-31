@@ -1,0 +1,6 @@
+[submodule "pythonutils_online"]
+	path = pythonutils_online
+	url = https://github.com/i-amgeek/pythonutils_online
+[submodule "instant-wallpaper-changer"]
+	path = instant-wallpaper-changer
+	url = https://github.com/i-amgeek/instant-wallpaper-changer
