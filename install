@@ -1,10 +1,7 @@
-sudo apt-get install zsh cowsay tmux
-cp .oh-my-zsh ~/
-cp .zshrc ~/
+sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip
+pip3 install numpy pandas jupyterlab flask
 sudo chsh -s $(which zsh)
-cp .config ~/
-cp .fonts ~/
+ln -s ~/dotfiles/* ~/
+ln -s ~/dotfiles/.* ~/
 fc-cache -fv ~/.fonts 
-cp .bash_aliases ~/
-cp commands ~/
 
