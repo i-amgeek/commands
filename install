@@ -1,7 +1,11 @@
-sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip
+sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip dtrx
+sudo apt install build-essential cmake python3-dev
 pip3 install numpy pandas jupyterlab flask
-sudo chsh -s $(which zsh)
-ln -s ~/dotfiles/* ~/
-ln -s ~/dotfiles/.* ~/
-fc-cache -fv ~/.fonts 
-
+chsh -s $(which zsh) $USER
+ln -s $HOME/dotfiles/* ~/
+ln -s $HOME/dotfiles/.* ~/
+fc-cache -fv ~/.fonts
+rm ~/commands/motivate
+ln -s $HOME/commands/motivate_folder/motivate ~/commands/motivate
+~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
+rm ~/.git
