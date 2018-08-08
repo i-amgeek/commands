@@ -1,7 +1,7 @@
 sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip dtrx
 sudo apt install build-essential cmake python3-dev
-pip3 install numpy pandas jupyterlab flask
-chsh -s $(which zsh) $USER
+pip3 install numpy pandas jupyterlab flask --user
+sudo chsh -s $(which zsh) $USER
 ln -s $HOME/dotfiles/* ~/
 ln -s $HOME/dotfiles/.* ~/
 fc-cache -fv ~/.fonts
