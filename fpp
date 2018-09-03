@@ -1,0 +1,1 @@
+/home/anonymous/.local/PathPicker/fpp
