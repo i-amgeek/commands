@@ -1,6 +1,22 @@
-sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip dtrx
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install npm --global
+
+sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip dtrx rubygems ruby-full imgp
 sudo apt install build-essential cmake python3-dev
-pip3 install numpy pandas jupyterlab flask --user
+
+pip install maybe glances
+pip3 install numpy pandas jupyterlab flask advance-touch --user
+
+npm install -g undollar
+
+gem install colorls
+
+curl https://sh.rustup.rs -sSf | sh
+cargo build --release
+cargo install bat
+sudo apt-get install ripgrep
+sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
 sudo chsh -s $(which zsh) $USER
 ln -s $HOME/dotfiles/* ~/
 ln -s $HOME/dotfiles/.* ~/
