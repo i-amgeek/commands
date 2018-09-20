@@ -1,4 +1,4 @@
-#!/home/anonymous/anaconda3/bin/python
+#!$HOME/anaconda3/bin/python
 
 import os
 import urllib2

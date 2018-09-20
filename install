@@ -2,8 +2,8 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install npm --global
 
-sudo apt-get install zsh cowsay tmux htop silversearcher-ag python3-pip dtrx rubygems ruby-full imgp
-sudo apt install build-essential cmake python3-dev
+sudo apt-get install zsh cowsay tmux htop python3-pip dtrx rubygems ruby-full fdupes cputool git
+sudo apt install build-essential cmake python3-dev neofetch
 
 pip install maybe glances
 pip3 install numpy pandas jupyterlab flask advance-touch --user

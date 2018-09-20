@@ -5,7 +5,7 @@ try:
 	app = argv[1]
 except:
 	print("Give name of app to kill as argument")
-system("ps ax | ag "+app+" | awk '{print $1}' | xargs kill 9")
+system("ps ax | rg "+app+" | awk '{print $1}' | xargs sudo kill 9")
 
 
 
