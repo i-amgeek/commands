@@ -16,7 +16,7 @@ curl https://sh.rustup.rs -sSf | sh
 cargo build --release
 cargo install bat
 sudo apt-get install ripgrep
-sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
+sudo curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify
 sudo chsh -s $(which zsh) $USER
 ln -s $HOME/dotfiles/* ~/
 ln -s $HOME/dotfiles/.* ~/
